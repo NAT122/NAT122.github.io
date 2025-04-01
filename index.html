@@ -13,16 +13,22 @@
             margin: 0;
             padding: 0;
         }
-        header {
+       header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
             padding: 40px;
             background-color: #27391C;
         }
+        .header-container {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
         .header-left {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            text-align: left;
         }
         .profile-pic {
             width: 120px;
@@ -37,11 +43,10 @@
         }
         .about {
             max-width: 500px;
-            text-align: right;
+            text-align: left;
         }
         .section {
             padding: 40px;
-            text-align: center;
         }
         .projects, .education {
             display: flex;
@@ -54,7 +59,7 @@
             padding: 20px;
             border-radius: 8px;
             width: 300px;
-            text-align: center;
+            text-align: left;
         }
         .card img {
             max-width: 100%;
