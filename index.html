@@ -8,53 +8,62 @@
     <!-- Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     
     <style>
-        body {
-            font-family: "Tektur", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400; /* Ajusta el peso entre 400 y 900 */
-            font-style: normal;
-            background-color: #18230F;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        
-            h1, h2 {
-            font-weight: 700; /* Puedes usar diferentes pesos */
-        }
-        header {
-            background-color: #27391C;
-            padding: 20px;
-            text-align: center;
-        }
-        .intro {
-            text-align: center;
-            padding: 20px;
-            background-color: #255F38;
-        }
-        .profile-pic {
-            width: 150px; /* Ajusta el tamaño */
-            height: 150px;
-            border-radius: 50%; /* Hace que sea redonda */
-            display: block;
-            margin: 0 auto 15px; /* Centrar la imagen */
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .project {
-            background-color: #1F7D53;
-            margin: 15px;
-            padding: 15px;
-            border-radius: 8px;
-            width: 300px;
-            text-align: center;
+        /* Fondo y fuente general */
+body {
+    font-family: "Roboto", sans-serif; /* Fuente base para párrafos */
+    background-color: #18230F;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra todo el texto */
+}
+
+/* Estilo de los títulos */
+h1, h2 {
+    font-family: "Tektur", sans-serif; /* Usa "Tektur" para los títulos */
+    font-weight: 700; /* Hace que los títulos sean más gruesos */
+    font-size: 2.5rem; /* Ajusta el tamaño del título */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+/* Descripciones y párrafos */
+p {
+    font-family: "Roboto", sans-serif; /* Usa "Roboto" para los textos */
+    font-size: 1.2rem; /* Tamaño del texto */
+    font-weight: 300; /* Texto más ligero */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: justify; /* Alinea los párrafos justificados */
+    max-width: 800px; /* Limita el ancho de los párrafos */
+    margin: 0 auto; /* Centra el texto */
+}
+
+/* Estilos para los proyectos */
+.project {
+    background-color: #1F7D53;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.project h3 {
+    font-family: "Tektur", sans-serif; /* Usa "Tektur" en los nombres de los proyectos */
+    font-size: 1.8rem; /* Ajusta el tamaño */
+    font-weight: 600;
+}
+
+.project p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left; /* Alinea la descripción a la izquierda */
+}
+
         }
         .project img {
             max-width: 100%;
