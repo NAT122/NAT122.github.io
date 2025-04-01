@@ -4,68 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    
-    <!-- Enlace a Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-    
     <style>
-        /* Fondo y fuente general */
-body {
-    font-family: "Roboto", sans-serif; /* Fuente base para párrafos */
-    background-color: #18230F;
-    color: white;
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Centra todo el texto */
-}
-
-/* Estilo de los títulos */
-h1, h2 {
-    font-family: "Tektur", sans-serif; /* Usa "Tektur" para los títulos */
-    font-weight: 700; /* Hace que los títulos sean más gruesos */
-    font-size: 2.5rem; /* Ajusta el tamaño del título */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-}
-
-/* Descripciones y párrafos */
-p {
-    font-family: "Roboto", sans-serif; /* Usa "Roboto" para los textos */
-    font-size: 1.2rem; /* Tamaño del texto */
-    font-weight: 300; /* Texto más ligero */
-    line-height: 1.6; /* Espaciado entre líneas */
-    text-align: justify; /* Alinea los párrafos justificados */
-    max-width: 800px; /* Limita el ancho de los párrafos */
-    margin: 0 auto; /* Centra el texto */
-}
-
-/* Estilos para los proyectos */
-.project {
-    background-color: #1F7D53;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 8px;
-    width: 300px;
-    text-align: center;
-}
-
-.project h3 {
-    font-family: "Tektur", sans-serif; /* Usa "Tektur" en los nombres de los proyectos */
-    font-size: 1.8rem; /* Ajusta el tamaño */
-    font-weight: 600;
-}
-
-.project p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: left; /* Alinea la descripción a la izquierda */
-}
-
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: #18230F;
+            color: white;
+            margin: 0;
+            padding: 0;
         }
-        .project img {
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            background-color: #27391C;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .header-text h1 {
+            font-family: "Tektur", sans-serif;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .about {
+            max-width: 500px;
+            text-align: right;
+        }
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+        .projects, .education {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background-color: #1F7D53;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        }
+        .card img {
             max-width: 100%;
             border-radius: 5px;
         }
@@ -73,25 +64,46 @@ p {
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <div class="header-left">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="header-text">
+                <h1>Tu Nombre</h1>
+                <p>Tu título o especialización</p>
+            </div>
+        </div>
+        <div class="about">
+            <p>Breve descripción sobre ti. Menciona tu experiencia, intereses o habilidades clave.</p>
+        </div>
     </header>
-    <section class="intro">
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio. Here you can find my latest projects and creative works.</p>
-    </section>
-    <section class="projects">
-        <div class="project">
-    <h3>Data Visualization Dashboard</h3>
-    <img src="images/dashboard.png" alt="Data Visualization Dashboard">
-    <p>Un dashboard interactivo en Power BI que analiza tendencias de consumo.</p>
-</div>
 
-<div class="project">
-    <h3>Machine Learning API</h3>
-    <img src="images/ml_api.png" alt="Machine Learning API">
-    <p>API con modelos de machine learning para predicciones en tiempo real.</p>
-</div>
+    <section class="section">
+        <h2>Proyectos</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Proyecto 1</h3>
+                <img src="images/project1.jpg" alt="Proyecto 1">
+                <p>Descripción del proyecto 1.</p>
+            </div>
+            <div class="card">
+                <h3>Proyecto 2</h3>
+                <img src="images/project2.jpg" alt="Proyecto 2">
+                <p>Descripción del proyecto 2.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Educación y Experiencia Laboral</h2>
+        <div class="education">
+            <div class="card">
+                <h3>Educación</h3>
+                <p>Detalles sobre tu formación académica.</p>
+            </div>
+            <div class="card">
+                <h3>Experiencia Laboral</h3>
+                <p>Descripción de tu experiencia profesional.</p>
+            </div>
+        </div>
     </section>
 </body>
 </html>
